@@ -148,7 +148,8 @@ a.change{
     border-radius: 40px;
 }
 .crypto {
-    width: 730px;
+    width: 700px;
+  
 }
 
 .container1{
@@ -160,15 +161,15 @@ a.change{
     bottom: 0px;
     background-color: rgba(0, 0, 0, 0.199);
     color: white;
-    padding-left: 30px;
-    padding-right: 50px;
+    padding: 0 20px 20px 55px;
     border-radius: 0px 0px 40px 40px;
-    font-size: 35px;
-    text-align: center;
+    font-size: 30px;
+    text-align: start;
 
   }
 
   .div-bg{
+    border: 2px solid rgb(199, 13, 0);
     background-image: url('./images/Rectangle 20.svg');
     background-position: center;
     background-size: cover;
@@ -183,23 +184,26 @@ a.change{
   }
 
   .text-image-2{
-    padding: 30px 30px;
+
+    padding: 25px 30px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 0px 0px 40px 40px;
-    font-size: 43px;
+    font-size: 40px;
   }
 
   .container3{
+    width: 500px;
+    height: 600px;
     border: 1px solid rgb(199, 129, 0);
     background-color: rgba(0, 0, 0, 0.801);
     display: flex;
     flex-direction: column;
     color : #FFFFFF;
-    padding : 0 25px;
-    border-radius: 40px;
+    padding : 0 20px 0 20px;
+    border-radius: 32px;
   }
 
 .Header1{
@@ -208,21 +212,38 @@ a.change{
     justify-content : space-evenly;
     padding : 10px 0px;
     border: 1px solid blue;
-    font-size: 12px;
     margin-bottom: 20px;
-    font-size: 12px;
+  
 }
 .Header1items a{
-    
+   
     padding : 1px 8px;
-    font-size: 13px;
-
+    font-size: 10px;
 }
+
+.under {
+    position: relative;
+    z-index: 1;
+  }
+  
+.over {
+    position: absolute;
+    z-index: 2;
+    right:118px;
+    bottom: 572px;
+    
+  }
 
 .shiba{
  
     border-radius: 30px;
     background-color: #666699;
+}
+.ShibaNameLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
 }
 .Header2{
     border: 1px solid blue;
@@ -230,10 +251,12 @@ a.change{
 }
 .inu{
     font-size: 20px;
+    padding-left: 5px;
 }
 
 .inc{
-    font-size: 10px;
+    font-size: 12px;
+    padding-left: 38px;
 
 }
 .Line1{
@@ -249,10 +272,23 @@ a.change{
     font-size: 30px;
     font-weight: 600;
   }
+
+p{
+    color: #FFFFFF ;
+}
+
+.silver{
+    color:rgba(255, 255, 255, 0.70);
+}
 span{
     font-size: 10px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.70);
+}
+
+.arrowValue{
+    display: flex;
+    flex-direction: row;
 }
 
 .Header4{
@@ -260,7 +296,10 @@ span{
     font-size: 13px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.70);
+    padding-left: 5px;
 }
+
+
 
 .Line2{
     margin-top: 10px;
@@ -276,7 +315,15 @@ span{
 .parameters1{
     border: 1px solid rgb(255, 0, 0);
 }
-.parameters{
+.parametersone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgba(255, 255, 255, 0.70);
+    
+}
+
+.parameterstwo{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -285,17 +332,10 @@ span{
     
 }
 
-.values{        
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
 .parameters2{
     padding-top: 12px;
-    border: 1px solid rgb(0, 255, 128);
+    border: 1px solid rgb(235, 252, 0);
+    
 }
 
 .Line3{
@@ -339,7 +379,7 @@ span{
     margin-top: 15px;
 }
 .date{
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     justify-content: flex-end;
     align-items: end;
