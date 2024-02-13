@@ -199,17 +199,30 @@ a.change{
     flex-direction: column;
     color : #FFFFFF;
     padding : 0 25px;
+    border-radius: 40px;
   }
 
 .Header1{
     display: flex;
     flex-direction: row;
-    justify-content : space-between;
+    justify-content : space-evenly;
     padding : 10px 0px;
     border: 1px solid blue;
     font-size: 12px;
     margin-bottom: 20px;
     font-size: 12px;
+}
+.Header1items a{
+    
+    padding : 1px 8px;
+    font-size: 13px;
+
+}
+
+.shiba{
+ 
+    border-radius: 30px;
+    background-color: #666699;
 }
 .Header2{
     border: 1px solid blue;
@@ -221,13 +234,117 @@ a.change{
 
 .inc{
     font-size: 10px;
+
 }
 .Line1{
-
-    margin-left: 30px;
-    margin-right: 30px;
-    width: 300px;
+    margin-top: 3px;
+    width: 350px;
     opacity: 0.7;
-    border: 1px solid #000000;
-    box-shadow: .1px .1px 1px #000000;
+    border: 1px solid rgba(255, 255, 255, 0.301);
   }
+
+.Header3{
+    border: 1px solid blue;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+span{
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.Header4{
+    border: 1px solid blue;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.Line2{
+    margin-top: 10px;
+    width: 350px;
+    opacity: 0.7;
+    border: 1px solid rgba(255, 255, 255, 0.301);
+  }
+
+.Header5{
+    border: 1px solid blue;
+
+  }
+.parameters1{
+    border: 1px solid rgb(255, 0, 0);
+}
+.parameters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.70);
+    
+}
+
+.values{        
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.parameters2{
+    padding-top: 12px;
+    border: 1px solid rgb(0, 255, 128);
+}
+
+.Line3{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 350px;
+    opacity: 0.7;
+    border: 1px solid rgba(255, 255, 255, 0.301);
+  }
+
+.Header6{
+    margin-bottom: 25px;
+}
+
+.trading-activity{
+    border: 1px solid blue;
+    width: 300px;
+}
+
+.slider{
+    width: 300px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    position:relative;
+    border-radius: 10px;
+    
+}
+.slider:before {
+    content:'';
+    background:#666699;
+    width: 230px;
+    height: 8px;
+    position:absolute;    
+    border-radius: 10px;
+}
+
+.buysell{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.date{
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+ }
+
+ .small{
+    font-size: 10px;
+ }
