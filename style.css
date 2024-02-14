@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Poppins";
+    
 }
 .fullview{
     width:100vw;
@@ -12,23 +13,25 @@
     flex-direction: row;
     justify-content : space-around;
     align-items: center;
-    border: 1px solid blue;
+
     margin-top: 64px;
 }
-
-.logo{
-    border: 1px solid red;
+html{
+    overflow-x: hidden;   /*cuts everything outside*/
+    width:100vw;
 }
+
 body{
     background-color: #DBDBDB;
     overflow-x: hidden;
     width:100vw;
+    border:1px solid red;
+
 }
 a.change{
     color:#666699
 }
 .topics{
-    border: 1px solid rgb(17, 143, 165);
     background-color: #FFFFFF;
     border-radius: 20px;
     padding-left: 40px;
@@ -70,8 +73,6 @@ a.change{
     
     display:flex;
     align-items: center;
-    height: 80px;
-    
     
 }
 .Social a{
@@ -81,21 +82,24 @@ a.change{
     font-weight: bold;
     border-radius: 50px;
     background-color: rgba(102, 102, 153, 0.5);
+   
 
 }
 
 
 .subHeader{
-    border: 1px solid olive;
+    border: 1px solid rgb(77, 65, 1);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-weight: 600;
+    
+
 }
 .notification{
 
-    border: 1px solid #d83b0c;
+    border: 1px solid rgba(102, 102, 153, 0.50);
     padding : 5px ;
     border-radius: 30px;
     width: 300px;
@@ -107,6 +111,18 @@ a.change{
     padding : 0 12px;
     
     
+}
+
+.searchImage{
+    border: 1px solid green;
+    width: 100px;
+    height: 50px;
+    background-image: url('/images/Group 2.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;    
+
+
 }
 
 .bell{
@@ -124,10 +140,11 @@ a.change{
 .about{
     
     display:flex;
+    flex-direction: row;
     align-items: center;
     height: 80px;
-    border: 1px solid #0000f9;
-    margin-left: 80px
+    margin-left: 80px;
+    gap:10px
     
   }
 
@@ -143,8 +160,8 @@ a.change{
 }
 
 .images{
-    border: 1px solid orangered;
-    padding : 0 60px 20px 60px;
+   
+    padding : 0 60px 20px 60px; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -165,7 +182,7 @@ a.change{
 
 .container1{
     position: relative;
-    border: 1px solid rgb(232, 248, 0);
+   
 }
 .text-block {
     position: absolute;
@@ -180,7 +197,7 @@ a.change{
   }
 
   .div-bg{
-    border: 2px solid rgb(199, 13, 0);
+
     background-image: url('./images/Rectangle 20.svg');
     background-position: center;
     background-size: cover;
@@ -397,40 +414,109 @@ span{
 
  .small{
     font-size: 10px;
+ }
+@media screen and (max-width: 768px){
 
-}
-
-@media (max-width: 768px){
-
-
-      .images{
-    
+    .header{
         display: flex;
         flex-direction: column;
+        width: 100vw;
+    }
+
+    .topics{
+        
+        padding-left: 20px;
+        width: 100vw;
+        margin-left: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-around;
+        box-shadow: -.5px 1px 4px #000000;
+    
+
+      
+    }
+    .line{
+        width:0vw;
+    }
+
+    .Social a{
+    
+        display:flex;
+        flex-direction: column;
+        margin: 10px -0;
+    }
+
+    .subHeader{
+        border: 1px solid gold;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
         align-items: center;
+        font-weight: 600;
+    }
+    .searchImage{
+
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;    
+  
+        
+    }
+
+    .notification{
+       
+        border-radius: 30px;
+        width: 100vw;
+        margin : 30px 100px 30px 10px; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding : 5px 10px;
+        
+    }
+
+    .bell{
+        padding-right:10px;
+    }
+
+    .line2 {
+
+        margin-left: 10px;
+        margin-right: 10px;
+        opacity: 0.7;
+        width:100vw;
+        border: 1px solid #000000;
+        box-shadow: .1px .1px 1px #000000;
+      }
+
+    .about{
+    
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 0px;
+      }
+
+    .images{
+        display: flex;
+        flex-direction: column;
         padding : 2vw;
         gap: 15px;
 
     }
 
     .ai{
-        width: 96vw;
+        width: 100vw;
     }
 
-    .div-bg{
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        width: 96vw;
-      }
-
     .container3{
-        width: 96vw;
-      }
-}
+        width:96vw;
+    }
 
-@media (max-width: 361px){
 
 }
