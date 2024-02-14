@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: "Poppins";
 }
-
+.fullview{
+    width:100vw;
+}
 .header{
     display: flex;
     flex-direction: row;
@@ -18,7 +20,9 @@
     border: 1px solid red;
 }
 body{
-    background-color: #DBDBDB;;
+    background-color: #DBDBDB;
+    overflow-x: hidden;
+    width:100vw;
 }
 a.change{
     color:#666699
@@ -112,13 +116,12 @@ a.change{
 
     margin-left: 50px;
     margin-right: 30px;
-    width: 1830px;
     opacity: 0.7;
     border: 1px solid #000000;
     box-shadow: .1px .1px 1px #000000;
   }
 
-  .about{
+.about{
     
     display:flex;
     align-items: center;
@@ -128,14 +131,14 @@ a.change{
     
   }
 
-  .about a{
+.about a{
     border: 1px solid #666699;
     padding : 10px 20px;
     font-size: 10px;
     font-weight: bold;
     border-radius: 50px;
     background-color: #666699;
-    color : #FFFFFF;
+    color : hsl(0, 0%, 100%);
     
 }
 
@@ -394,91 +397,38 @@ span{
 
  .small{
     font-size: 10px;
- }
- @media (max-width: 1367px){
-    .images{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .subHeader{
-        display: flex;
-        flex-direction: row;
-        
-        align-items: center;
-        font-weight: 600;
-    }
-    .about{
-    
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        height: 80px;
-        margin-left: 80px
-        
-      }
+
 }
 
-@media (max-width: 361px){
+@media (max-width: 768px){
 
-    .header{
+
+      .images{
+    
         display: flex;
         flex-direction: column;
-        width: 100%;
-    }
-    .topics{
-        max-width: 173%;
-        margin-left: 270px;
+        align-items: center;
+        padding : 2vw;
+        gap: 15px;
+
     }
 
-    .Social{
-    
-        display:flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 170%;
-        margin-left:270px;
-        
-    }
-    .subHeader{
-        display: flex;
-        flex-direction: row;
-        width: 170%;
-        align-items: center;
-        font-weight: 600;
+    .ai{
+        width: 96vw;
     }
 
-    .notification{
-        border-radius: 30px;
-        width: 55%;
-        margin : 30px 100px 30px 30px; 
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        padding : 0 35px;
-        
-        
-    }
-    .images{
+    .div-bg{
+        background-size: cover;
+        background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
-        max-width: 100%;
-    }
-
-    .about{
-    
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 120%;
-        height: 80px;
-        margin-left: 80px
-        
+        justify-content: end;
+        width: 96vw;
       }
-      
+
+    .container3{
+        width: 96vw;
+      }
 }
 
 @media (max-width: 361px){
