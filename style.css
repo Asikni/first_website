@@ -82,7 +82,7 @@ a.change{
     padding : 10px 20px;
     font-size: 13px;
     font-weight: bold;
-    border-radius: 0px;
+    border-radius: 30px;
     background-color: rgba(102, 102, 153, 0.5);
     margin: 5px 0; 
     width: 100vw;
@@ -408,8 +408,9 @@ span{
        
     }
     .logo{
-        padding-top: 5px;
-        align-self: center;
+        display: none;
+        /* padding-top: 5px;
+        align-self: center; */
     }
     .topics{
         margin-left: 2px;
@@ -420,24 +421,68 @@ span{
         flex-direction: column;
         align-items:left;
     
+
     }
     .line{
         display: none;
     }
-    .items {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: start;
+    #main{
+      
+        width: 100px;
+        height: 50px;
+        background-image: url('images/sidebar-2.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;    
+    
+
     }
+    .items{
+    
+        height: 100%;
+        margin-left: -250px;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(143, 143, 158);
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 50px;
+        padding-left:20px;
+        
+      }
+      
+      .items a {
+        background-color: rgb(143, 143, 158);
+        color:#ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.2s;
+      }
+      
+      .items .closebtn {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 36px;
+    
+      }
+      
+
 
     .Social{
         margin: 30px 0px 2px 0px;
+        
     }
     .Social a{
     
         display:flex;
         flex-direction: column;
+        border-radius: 0px;
         
     }
 
@@ -475,10 +520,6 @@ span{
     .bell{
         padding-right:10px;
     }
-
-    .line2 {
-        
-      }
 
     .about{
     

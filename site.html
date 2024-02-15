@@ -16,13 +16,18 @@
                     <div class = "logo">
                         <img src = "./images/MetaNews-Logo-main.svg" alt = "logo icon">
                     </div>
-                    <div class = "items">
-                            <a class = "change">The Latest</a> 
-                            <a >Web3.0 News</a> 
-                            <a >About</a>
-                            <a >Contact</a> 
-                            <a >Press Releases</a>
-                            <a >Market Cap</a>
+                    <div id="mySidenav" class = "items">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="#" class = "change">The Latest</a> 
+                            <a href="#">Web3.0 News</a> 
+                            <a href="#">About</a>
+                            <a href="#">Contact</a> 
+                            <a href="#">Press Releases</a>
+                            <a href="#">Market Cap</a>
+                        
+                    </div>
+                    <div id="main" onclick="openNav()">
+                        <span style="font-size:30px;cursor:pointer" ></span>
                         
                     </div>
                     
@@ -90,7 +95,6 @@
                                 </nav>
                             </div>
                                 <div class="arrowImage">
-                                    
                                     <div class="over" ><img src="./images/Arrow 2.svg" alt="right arrow"></div>
                                 </div>
                             
@@ -171,5 +175,9 @@
                 </div>
             </div>
         </div>
+        
     </body>
+    <script src="site.js">
+
+    </script>
     </html>
