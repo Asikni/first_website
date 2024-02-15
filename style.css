@@ -17,6 +17,8 @@
 
     margin-top: 64px;
 }
+
+
 html{
     overflow-x: hidden;   /*cuts everything outside*/
     width:100vw;
@@ -51,14 +53,26 @@ a.change{
     align-self: start;
 }   
 
+.items{
+    padding-left: 30px;
+}
+
+
 
 .topics a{
     background-color: white;
     font-weight: bold;
     padding : 5px 8px;
     font-size: 13px;
+    text-decoration: none;
+    color:#000000;
 
 }
+
+.items .closebtn {
+    display: none;
+
+  }
 
 
 .line {
@@ -367,7 +381,7 @@ span{
 }
 
 .slider{
-    width: 300px;
+    width: 420px;
     height: 8px;
     background: rgba(255, 255, 255, 0.549);
     position:relative;
@@ -377,13 +391,14 @@ span{
 .slider:before {
     content:'';
     background:#4040c1;
-    width: 230px;
+    width: 350px;
     height: 8px;
     position:absolute;    
     border-radius: 10px;
 }
 
 .buysell{
+    width: 420px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -399,6 +414,256 @@ span{
  .small{
     font-size: 10px;
  }
+
+ @media screen and (max-width: 1367px){
+
+ .header{
+    margin-top: 50px;
+    
+    width:98%;
+}
+
+
+.topics{
+    width: 600px;
+    margin-left: 10px;    
+}
+
+.topics a{
+    font-size: 12px;
+
+}
+
+
+.line {
+
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+  }
+
+
+.searchImage{
+  
+    width: 100px;
+    height: 40px;
+    background-image: url('/images/Group 2.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;    
+
+}
+
+.bell{
+    padding-top: 5px;
+}
+.line2 {
+
+    width:92%
+
+  }
+
+
+
+.about a{
+    padding : 12px 22px;
+    font-size: 12px;
+    
+}
+
+.images{
+    
+    padding : 0 40px 20px 25px;
+    
+}
+.container1{
+   
+    width: 390px;
+}
+
+.ai{
+    float: left;
+    width: 390px;
+    height: 550px;
+    object-fit: cover;
+}
+
+.container2{
+    
+    width: 480px;
+}
+.crypto {
+    width: 480px;
+    object-fit: contain;
+  
+}
+
+
+.text-block {
+  
+    position: absolute;
+    bottom: 0px;
+    padding: 5px 30px 5px 50px;
+    font-size: 30px;
+  }
+
+
+
+
+  .text-image-2{
+
+    padding: 0px 10px 25px 30px;
+    font-size: 35px;
+  }
+
+  .container3{
+    width: 390px;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.801);
+    display: flex;
+    flex-direction: column;
+    color : #FFFFFF;
+    padding : 0 20px 0 20px;
+    border-radius: 32px;
+  }
+
+.Header1{
+    display: flex;
+    flex-direction: row;
+    justify-content : space-evenly;
+    padding : 10px 0px;
+    margin-bottom: 20px;
+  
+}
+.Header1items a{
+   
+    padding : 1px 8px;
+    font-size: 10px;
+}
+
+.over{
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.shiba{
+ 
+    border-radius: 30px;
+    background-color: #666699;
+}
+.ShibaNameLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+.Header2{
+    margin-top: -10px;
+}
+
+
+.Line1{
+    margin-top: 3px;
+    width: 350px;
+    opacity: 0.7;
+
+  }
+
+.Header3{
+    
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+p{
+    color: #FFFFFF ;
+}
+
+.silver{
+    color:rgba(255, 255, 255, 0.70);
+}
+span{
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.arrowValue{
+    display: flex;
+    flex-direction: row;
+}
+
+.Header4{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.70);
+    padding-left: 5px;
+}
+
+
+.Header5{
+    font-size: 15px;
+}
+.Line2{
+    margin-top: 15px;
+    width: 350px;
+    opacity: 0.7;
+    
+  }
+
+
+.column1{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.Line3{
+    margin-top: 18px;
+  }
+
+.Header6{
+    margin-bottom: 20px;
+}
+
+
+.slider{
+    width: 320px;
+    
+}
+.slider:before {
+    content:'';
+    background:#4040c1;
+    width: 250px;
+
+}
+
+.buysell{
+    width: 320px;
+    display: flex;
+
+}
+.date{
+    margin-top: 45px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+ }
+
+ .small{
+    font-size: 10px;
+ }
+}
+
+
 @media screen and (max-width: 768px){
 
     .header{
@@ -440,15 +705,15 @@ span{
     .items{
     
         height: 100%;
-        margin-left: -250px;
-        width: 250px;
+        margin-left: -100vw;
+        width: 100vw;
         position: fixed;
         z-index: 1;
         top: 0;
         left: 0;
         background-color: rgb(143, 143, 158);
         overflow-x: hidden;
-        transition: 0.3s;
+        transition: 0.5s;
         padding-top: 50px;
         padding-left:20px;
         
@@ -461,7 +726,7 @@ span{
         font-size: 18px;
         display: flex;
         flex-direction: column;
-        transition: 0.2s;
+        transition: 0.5s;
       }
       
       .items .closebtn {
@@ -469,6 +734,7 @@ span{
         top: 0px;
         right: 0px;
         font-size: 36px;
+        display: block;
     
       }
       
@@ -544,18 +810,13 @@ span{
     .ai{
         width: 100vw;
         height: 600px;
-        object-fit: cover;
-       
     }
 
     .text-block {
-        position: absolute;
-        bottom: 0px;
-        background-color: rgba(0, 0, 0, 0.199);
-        color: white;
-        padding: 0 20px 20px 55px;
-        border-radius: 0px 0px 40px 40px;
-        font-size: 30px;
+       
+        padding: 10px 20px 20px 25px;
+        border-radius: 0px 0px 90px 40px;
+        font-size: 25px;
         text-align: start;
     
       }
@@ -564,10 +825,27 @@ span{
         width:100vw;
     }
     .date{
-        margin-top: 20px;
+        margin-top: 40px;
         display: flex;
         justify-content: flex-end;
         align-items: end;
      }
-
+     
+     .slider{
+        width: 80vw;
+        
+    }
+    .slider:before {
+        width: 60vw;
+    }
+    
+    .buysell{
+        width: 420px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
 }
+
+
