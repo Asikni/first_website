@@ -9,6 +9,7 @@
     width:100vw;
 }
 .header{
+   
     display: flex;
     flex-direction: row;
     justify-content : space-around;
@@ -25,7 +26,6 @@ body{
     background-color: #DBDBDB;
     overflow-x: hidden;
     width:100vw;
-    border:1px solid red;
 
 }
 a.change{
@@ -50,10 +50,12 @@ a.change{
 .logo{
     align-self: start;
 }   
+
+
 .topics a{
     background-color: white;
     font-weight: bold;
-    padding : 5px 10px;
+    padding : 5px 8px;
     font-size: 13px;
 
 }
@@ -76,30 +78,32 @@ a.change{
     
 }
 .Social a{
-    border: 1px solid #998366;
+    
     padding : 10px 20px;
     font-size: 13px;
     font-weight: bold;
-    border-radius: 50px;
+    border-radius: 0px;
     background-color: rgba(102, 102, 153, 0.5);
-   
-
+    margin: 5px 0; 
+    width: 100vw;
+    align-items: center;
 }
 
 
 .subHeader{
-    border: 1px solid rgb(77, 65, 1);
+   
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-weight: 600;
+    width:97%;
     
 
 }
 .notification{
 
-    border: 1px solid rgba(102, 102, 153, 0.50);
+    border: 1px solid rgba(102, 102, 153, 0.5);
     padding : 5px ;
     border-radius: 30px;
     width: 300px;
@@ -114,7 +118,7 @@ a.change{
 }
 
 .searchImage{
-    border: 1px solid green;
+  
     width: 100px;
     height: 50px;
     background-image: url('/images/Group 2.svg');
@@ -225,7 +229,6 @@ a.change{
   .container3{
     width: 500px;
     height: 600px;
-    border: 1px solid rgb(199, 129, 0);
     background-color: rgba(0, 0, 0, 0.801);
     display: flex;
     flex-direction: column;
@@ -239,7 +242,6 @@ a.change{
     flex-direction: row;
     justify-content : space-evenly;
     padding : 10px 0px;
-    border: 1px solid blue;
     margin-bottom: 20px;
   
 }
@@ -249,18 +251,16 @@ a.change{
     font-size: 10px;
 }
 
-.under {
-    position: relative;
-    z-index: 1;
-  }
-  
-.over {
-    position: absolute;
-    z-index: 2;
-    right:118px;
-    bottom: 572px;
-    
-  }
+.over{
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 .shiba{
  
@@ -274,7 +274,7 @@ a.change{
 
 }
 .Header2{
-    border: 1px solid blue;
+
     margin-top: 20px;
 }
 .inu{
@@ -291,11 +291,11 @@ a.change{
     margin-top: 3px;
     width: 350px;
     opacity: 0.7;
-    border: 1px solid rgba(255, 255, 255, 0.301);
+
   }
 
 .Header3{
-    border: 1px solid blue;
+    
     margin-top: 10px;
     font-size: 30px;
     font-weight: 600;
@@ -320,7 +320,6 @@ span{
 }
 
 .Header4{
-    border: 1px solid blue;
     font-size: 13px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.70);
@@ -333,16 +332,10 @@ span{
     margin-top: 10px;
     width: 350px;
     opacity: 0.7;
-    border: 1px solid rgba(255, 255, 255, 0.301);
+    
   }
 
-.Header5{
-    border: 1px solid blue;
 
-  }
-.parameters1{
-    border: 1px solid rgb(255, 0, 0);
-}
 .parametersone{
     display: flex;
     flex-direction: row;
@@ -351,26 +344,17 @@ span{
     
 }
 .column1{
-    border:1px solid green;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.cap{
-    border:1px solid rgb(128, 126, 0);
-}
-
-.cir{
-    border:1px solid rgb(126, 128, 0);
-}
 
 .Line3{
     margin-top: 25px;
     margin-bottom: 25px;
     width: 350px;
     opacity: 0.7;
-    border: 1px solid rgba(255, 255, 255, 0.301);
   }
 
 .Header6{
@@ -378,7 +362,7 @@ span{
 }
 
 .trading-activity{
-    border: 1px solid blue;
+
     width: 300px;
 }
 
@@ -406,7 +390,7 @@ span{
     margin-top: 15px;
 }
 .date{
-    margin-top: 40px;
+    margin-top: 45px;
     display: flex;
     justify-content: flex-end;
     align-items: end;
@@ -421,41 +405,50 @@ span{
         display: flex;
         flex-direction: column;
         width: 100vw;
+       
     }
-
+    .logo{
+        padding-top: 5px;
+        align-self: center;
+    }
     .topics{
-        
-        padding-left: 20px;
+        margin-left: 2px;
+        padding-left: 10px;
+        padding-bottom: 5px;
         width: 100vw;
-        margin-left: 40px;
         display: flex;
-        flex-direction: row;
-        align-items: end;
-        justify-content: space-around;
-        box-shadow: -.5px 1px 4px #000000;
+        flex-direction: column;
+        align-items:left;
     
-
-      
     }
     .line{
-        width:0vw;
+        display: none;
+    }
+    .items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
     }
 
+    .Social{
+        margin: 30px 0px 2px 0px;
+    }
     .Social a{
     
         display:flex;
         flex-direction: column;
-        margin: 10px -0;
+        
     }
 
     .subHeader{
-        border: 1px solid gold;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100vw;
         align-items: center;
         font-weight: 600;
+        width:97vw;
     }
     .searchImage{
 
@@ -484,13 +477,7 @@ span{
     }
 
     .line2 {
-
-        margin-left: 10px;
-        margin-right: 10px;
-        opacity: 0.7;
-        width:100vw;
-        border: 1px solid #000000;
-        box-shadow: .1px .1px 1px #000000;
+        
       }
 
     .about{
@@ -503,20 +490,43 @@ span{
       }
 
     .images{
+    
         display: flex;
         flex-direction: column;
-        padding : 2vw;
+        justify-content: space-between;
         gap: 15px;
+        width:100vw;
+        padding: 0px 0px 0px 0px;
 
     }
 
     .ai{
         width: 100vw;
+        height: 600px;
+        object-fit: cover;
+       
     }
+
+    .text-block {
+        position: absolute;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.199);
+        color: white;
+        padding: 0 20px 20px 55px;
+        border-radius: 0px 0px 40px 40px;
+        font-size: 30px;
+        text-align: start;
+    
+      }
 
     .container3{
-        width:96vw;
+        width:100vw;
     }
-
+    .date{
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+     }
 
 }
