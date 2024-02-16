@@ -18,12 +18,58 @@
                     </div>
                     <div id="mySidenav" class = "items">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                            <a href="#" class = "change">The Latest</a> 
-                            <a href="#">Web3.0 News</a> 
-                            <a href="#">About</a>
-                            <a href="#">Contact</a> 
-                            <a href="#">Press Releases</a>
-                            <a href="#">Market Cap</a>
+                            <div class="Dropdown">
+                                <a href="#" class = "change">The Latest</a>
+                                <div class="Dropdown-content">
+                                  <a href="#">Whats New</a>
+                                  <a href="#">News</a>
+                                  <a href="#">Our company</a>
+                                </div>
+                            </div>
+                            <div class="Dropdown">
+                                <a href="#" class="change">Web3.0 News</a>
+                                <div class="Dropdown-content">
+                                    <a href="#">Technology Trends</a>
+                                    <a href="#">Blockchain Innovations</a>
+                                    <a href="#">Decentralized Web</a>
+                                </div>
+                            </div> 
+
+                            <div class="Dropdown">
+                                <a href="#" class="change">About</a>
+                                <div class="Dropdown-content">
+                                    <a href="#">Our Mission</a>
+                                    <a href="#">Company History</a>
+                                    <a href="#">Team Members</a>
+                                </div>
+                            </div>
+                            
+                            <div class="Dropdown">
+                                <a href="#" class="change">Contact</a>
+                                <div class="Dropdown-content">
+                                    <a href="#">Customer Support</a>
+                                    <a href="#">Business Inquiries</a>
+                                    <a href="#">Office Locations</a>
+                                </div>
+                            </div>
+                            
+                            <div class="Dropdown">
+                                <a href="#" class="change">Press Releases</a>
+                                <div class="Dropdown-content">
+                                    <a href="#">Latest Announcements</a>
+                                    <a href="#">Media Coverage</a>
+                                    <a href="#">Company Updates</a>
+                                </div>
+                            </div>
+                            
+                            <div class="Dropdown">
+                                <a href="#" class="change">Market Cap</a>
+                                <div class="Dropdown-content">
+                                    <a href="#">Cryptocurrency Analysis</a>
+                                    <a href="#">Market Trends</a>
+                                    <a href="#">Financial Reports</a>
+                                </div>
+                            </div>
                         
                     </div>
                     <div id="main" onclick="openNav()">
@@ -53,8 +99,17 @@
                         Subscribe for notifications
 
                     </div>
-                    <div class = "searchImage">
-                        <!-- <img src = "./images/Group 2.svg" alt = "search icon"> -->
+                    <div class="searchspace">
+                        <div class="search-wrap">
+                            
+                            <i id="searchIcon" class="material-icons accent">
+                                <div class = "searchImage">
+                                </div>
+                            </i>
+                            <input type="text" placeholder="Search..." id="search">
+                            <i id="clear" class="material-icons">clear</i>
+                            </div>
+
                     </div>
 
                 </div> 
