@@ -479,24 +479,25 @@ span{
     
 }
 .searchImage{
-    
+    border:1px solid red;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    
-    
+
 }
 
 .search-wrap{
     position: relative;
-    width:100%;
+    width:80%;
    
   }
   #searchIcon {
-    font-size: 5em;
+   
     position: absolute;
-    top: 0px;
+    top: 20px;
+    left:220px
   }
+
 
   .searchImage:hover{
     cursor:pointer;
@@ -510,11 +511,11 @@ span{
     border: solid 3px rgba(102, 102, 153, 0.5);
     border-radius: 50px;
     width: 0%;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     visibility: hidden;
     padding: 0px 20px 0px 40px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 40px;
     transition: .5s;  
   }
@@ -530,6 +531,8 @@ span{
     top: 10px;
     opacity:0;
     transition:.51s;
+    margin-top: 25px;
+    margin-bottom: 40px;
   }
   #clear.visible{
     opacity:1;
