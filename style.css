@@ -501,14 +501,11 @@ input {
   border-radius: 50%;
   background: none;
   outline: 0;
-  -webkit-transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
+  -webkit-transition: 0.4s ease-in-out, border-radius 0.8s ease-in-out,
     padding 0.2s;
-  transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
+  transition: 0.4s ease-in-out, border-radius 0.8s ease-in-out,
     padding 0.2s;
-  -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
-  -webkit-transform: translate(-100%, -50%);
-  -ms-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
 }
 
@@ -526,10 +523,7 @@ input {
   border: 0;
   color: inherit;
   cursor: pointer;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  -webkit-transform: translate(-100%, -50%);
-  -ms-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
 }
 
@@ -544,7 +538,6 @@ input {
   transform: rotate(45deg);
   margin-top: 18px;
   margin-left: 15px;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
@@ -555,7 +548,6 @@ input {
   transition-delay: 0.4s;
   top: 30px;
   left: 250px;
-  -webkit-transform: translate(0, -50%);
   -ms-transform: translate(-60%, -50%);
   transform: translate(-60%, -50%);
 
@@ -586,7 +578,6 @@ input {
   margin-top: -1px;
   margin-left: -13px;
   cursor: pointer;
-  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
    
 }
@@ -602,13 +593,7 @@ input {
   color: #000000;
   font-size: 20px;
   outline: 0;
-  -webkit-transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
-    padding 0.2s;
-  transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
-    padding 0.2s;
-  
   transition-delay: 0.4s, 0s, 0.4s;
-  -webkit-transform: translate(-100%, -50%);
   transform: translate(-10%, -50%);
 }
 
